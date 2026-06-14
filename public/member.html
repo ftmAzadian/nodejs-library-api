@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW6</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top" style="background-color: bisque; color: firebrick; min-height: 10%;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" style="font-weight: bold; color: firebrick;">HOME</a>
+      <button class="navbar-toggler button-navbar" style="border: none;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item hovering">
+            <a  class="nav-link" aria-current="page" href="./book.html">Books</a>
+          </li>
+          <li class="nav-item hovering">
+            <a  class="nav-link" href="./library.html">Library</a>
+          </li>
+          <li class="nav-item hovering">
+            <a  class="nav-link" href="./member.html">Member</a>
+          </li>
+          <li class="nav-item hovering">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="row container-fluid">
+    <div class="col-md-6">
+      <section id="borrow-return-book" style="padding-top: 80px;">
+        <h4 style="color: darksalmon; font-weight: bold;">Borrow Book</h4>
+        <form id="borrow-form">
+            <input type="text" id="borrow-memberID" placeholder="Member ID" required>
+            <input type="text" id="borrow-isbn" placeholder="ISBN" required>
+            <button class="blue-button" type="submit">Borrow Book</button>
+        </form>
+        <h4 style="color: darksalmon; font-weight: bold;">Return Book</h4>
+        <form id="return-form">
+            <input type="text" id="return-memberID" placeholder="Member ID" required>
+            <input type="text" id="return-isbn" placeholder="ISBN" required>
+            <button class="blue-button" type="submit">Return Book</button>
+        </form>
+    </section>
+    </div>
+    <div class="col-md-6">
+      <section id="member-details" style="padding-top: 80px;">
+        <h4 style="color: darksalmon; font-weight: bold;">Member Details</h4>
+        <input type="text" id="member-detail-id" placeholder="Member ID" required>
+        <button class="blue-button" id="get-member-details">Get Member Details</button>
+        <div id="details" style="color: darksalmon;"></div>
+    </section>
+    </div>
+    
+
+  
+  </div>
+    <footer class="text-center fixed-bottom text-lg-start bg-body-tertiary text-muted">
+      <div class="text-center p-3" style="background-color:bisque;">
+        © 2024 Copyright: Fatemeh Azadian 
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
